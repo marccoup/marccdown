@@ -35,12 +35,12 @@ export default class Marccdown {
     parseOptions(options) {
         for (const option in options) {
             switch (option) {
-                case 'handlers':
+                case 'components':
                     if (typeof options[option] === "object") {
                         this.components = options[option]
                     }
                     break;
-                case 'defaultHandler':
+                case 'defaultComponent':
                     if (options[option] instanceof Component) {
                         this.defaultComponent = options[option]
                     }
