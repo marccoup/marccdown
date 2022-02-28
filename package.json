@@ -1,12 +1,15 @@
 {
   "name": "marccdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An inline-rendering vanilla JS markdown editor",
   "main": "src/index.js",
   "repository": "git@github.com:marccoup/marccdown.git",
   "author": "Marc Coupland <marc@coupland.xyz> (https://coupland.xyz)",
   "license": "MIT",
-  "keywords": ["markdown", "editor"],
+  "keywords": [
+    "markdown",
+    "editor"
+  ],
   "homepage": "https://github.com/marccoup/marccdown",
   "bugs": "https://github.com/marccoup/marccdown/issues"
 }
