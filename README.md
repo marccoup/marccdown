@@ -1,4 +1,4 @@
-# marccdown
+# Marccdown
 
 An inline-rendering vanilla JS markdown editor, without default styles
 
