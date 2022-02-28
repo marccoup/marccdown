@@ -25,6 +25,8 @@ export default class Marccdown {
 
         this.parseOptions(options)
 
+        this.editor.style.whiteSpace = 'pre-wrap'
+
         this.editor.addEventListener('keydown', (event) => this.onKeydown(event))
         this.editor.addEventListener('paste', (event) => this.onPaste(event))
         this.editor.addEventListener('input', () => this.onInput())
@@ -57,6 +59,7 @@ export default class Marccdown {
         if (content !== '') {
             content.split("\n").forEach(line => {
                 let component = this.makeNewDefaultComponent(line)
+                component = this.getComponent(component.element)
                 component.handle()
 
                 this.editor.appendChild(component.element)
