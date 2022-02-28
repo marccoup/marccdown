@@ -2,8 +2,9 @@ import Component from "./Components/Component";
 import Paragraph from "./Components/Paragraph";
 import Heading from "./Components/Heading";
 import CaretHandler from "./Helpers/CaretHandler";
-import UnorderedList from "./Components/UnorderedList";
 import RepeatableComponent from "./Components/RepeatableComponent";
+import UnorderedList from "./Components/UnorderedList";
+import OrderedList from "./Components/OrderedList";
 
 export default class Marccdown {
     /** @type HTMLElement */
@@ -11,7 +12,8 @@ export default class Marccdown {
 
     components = [
         Heading,
-        UnorderedList
+        UnorderedList,
+        OrderedList
     ]
 
     defaultComponent = Paragraph
