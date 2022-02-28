@@ -74,6 +74,7 @@ properties on certain components
 |---------------|----------------------|-----------------------------------------------------------------------------------------|
 | Heading       | marccdown_heading    | classList, h1ClassList, h2ClassList, h3ClassList, h4ClassList, h5ClassList, h6ClassList |
 | UnorderedList | marccdown_ulist_item | classList                                                                               |
+| OrderedList   | marccdown_olist_item | classList                                                                               |
 | Paragraph     | marccdown_paragraph  | classList                                                                               |
 
 ### Changing the Default Component
