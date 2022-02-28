@@ -28,7 +28,7 @@ editor.init()
 - [x] Headings 1-6
 - [x] Paragraphs
 - [x] Unordered list items
-- [ ] Ordered list items
+- [x] Ordered list items
 - [ ] Nested list items
 - [ ] Links
 - [ ] Tasks
