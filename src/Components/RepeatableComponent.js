@@ -20,6 +20,10 @@ export default class RepeatableComponent extends Component {
         return this.element.innerText === this.constructor.defaultContent
     }
 
+    getNextItemContent() {
+        return this.constructor.defaultContent
+    }
+
     /**
      * @param {Marccdown} editor
      */
@@ -37,12 +41,13 @@ export default class RepeatableComponent extends Component {
 
     repeat() {
         const element = document.createElement('div')
-        element.innerText = this.constructor.defaultContent
+        element.innerText = this.getNextItemContent()
 
         const component = new this.constructor(element)
-        component.handle()
 
         this.element.after(component.element)
+
+        component.handle()
 
         CaretHandler.placeCaret(component.element, this.constructor.defaultContent.length)
     }
