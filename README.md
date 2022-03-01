@@ -109,9 +109,9 @@ anywhere other than at the bottom, as it can match any given element.***
 import {Marccdown, Heading} from "marccdown"
 
 const editor = new Marccdown(document.getElementById('myEditorId'), {
-    components: {
+    components: [
         Heading
-    }
+    ]
 })
 editor.init()
 ```
@@ -197,10 +197,10 @@ import {Marccdown, UnorderedList} from "marccdown"
 import MyHeading from "./MyHeading.js"
 
 const editor = new Marccdown(document.getElementById('myEditorId'), {
-    components: {
+    components: [
         MyHeading,
         UnorderedList
-    }
+    ]
 })
 editor.init()
 ```
